@@ -3,11 +3,6 @@ body {
     padding-top: 90px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 /* 헤더 메뉴 부분 */
 header {
     position: fixed;
@@ -15,6 +10,11 @@ header {
     top: 0%;
     left: 0%;
     right: 0%;
+}
+
+.menu_top > ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 .navbar_top {
@@ -367,7 +367,6 @@ input[type=radio]:checked {
 }
 
 /* 웨일온 하단 다운로드 영역 */
-
 .main_sec_whaledown .inner {
     width: 100%;
     display: block;
@@ -386,6 +385,41 @@ input[type=radio]:checked {
     justify-content: center;
 }
 
+/* 웨일온 푸터 영역 */
 .footer {
     background-color: rgb(247, 247, 247);
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .inner {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+}
+
+.footer .inner > ul {
+    list-style: none;
+    display: flex;
+    font-family: 'NanumSquare';
+    color: #dadada;
+    padding-left: 0%;
+}
+
+.footer .inner > ul li a {
+    text-decoration: none;
+    color: #cecece;
+}
+
+.footer .inner > ul li::after {
+    content: "|";
+    display: block;
+    float: right;
+    padding: 0 20px;
+}
+
+.footer .inner > ul li:last-child::after {
+    content: "";
+    padding: 0%;
 }
