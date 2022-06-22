@@ -3,6 +3,10 @@ body {
     padding-top: 90px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* 헤더 메뉴 부분 */
 header {
     position: fixed;
@@ -12,9 +16,27 @@ header {
     right: 0%;
 }
 
+.menu_top > ul > li > ul {
+    background-color: #fff;
+    width: auto;
+    height: 100px;
+}
+
 .menu_top > ul li a {
     text-decoration: none;
     color: black;
+}
+
+.menu_top > ul > li > ul {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.menu_top > ul > li > ul > li {
+    display: block;
+    width: 100%;
+    display: block;
 }
 
 .navbar_top {
