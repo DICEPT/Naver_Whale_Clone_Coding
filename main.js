@@ -2,9 +2,11 @@
 
 let nav = document.querySelector('nav'),
     menu_top_btn = document.querySelector('.menu_top_btn');
+
 menu_top_btn.addEventListener('mouseover', function(){
     nav.style.height = '290px';
 });
+
 menu_top_btn.addEventListener('mouseout', function(){
     nav.style.height = '90px';
 });
